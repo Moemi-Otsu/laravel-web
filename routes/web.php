@@ -23,6 +23,6 @@ Route::get('auth/register', 'Auth\RegisterController@showRegistrationForm');
 Route::post('auth/register', 'Auth\RegisterController@register');
 
 Route::get('/auth/login', 'Auth\LoginController@showLoginForm');
-Route::get('/auth/login', 'Auth\LoginController@login');
+Route::post('/auth/login', 'Auth\LoginController@login');
 
-//Route::get('/auth/logout', 'Auth\LoginController@logout');
+Route::get('/auth/logout', 'Auth\LoginController@logout');
